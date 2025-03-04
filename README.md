@@ -168,3 +168,4 @@ iface eth0 inet dhcp
 $: make 2>&1  build.log
 ```
 настроить соединение по ethernet. соединить патчкордом beaglebone с ноутбуком:
+![](.pictures/Image1.png)
