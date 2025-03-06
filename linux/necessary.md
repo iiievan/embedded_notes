@@ -28,6 +28,10 @@ sudo apt-get install gdb-arm-none-eabi
 > in menu bar **Selection->Switch to Ctr+Click for Multi-Cursor**  
 > **SHIFT + ALT + LEFT_Mouse** works for me
 
+5\.1. sublime column selection mode in linux
+> **SHIFT+right_mbutton**
+
+
 6. install cmake latest version
 ```
 sudo apt remove --purge --auto-remove cmake
@@ -91,9 +95,9 @@ bash Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 * copy arch and untar it
 ```
-cp -a sublime_3176_x64.tar.bz2  /home/ishopov/
-cd /home/ishopov/
-tar vxjf sublime_3176_x64.tar.bz2
+cp -a sub.tar.bz2  /home/mbokastnev/
+cd /home/mbokastnev/
+tar vxjf sub.tar.bz2
 ```
 *  move to opt and rename
 ```
