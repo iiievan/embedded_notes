@@ -66,7 +66,7 @@ sudo make install
 ```
 ./ct-ng
 ```
-* view available examples for many platforms
+view available examples for many platforms
 ```
 ./ct-ng list-samples
 ./ct-ng show-arm-cortex_a8-linux-gnueabi
@@ -143,8 +143,8 @@ rebuild if errors appears:
 ```
 ## EXPORT TO PATH
 
-чтобы экспортировать компилятор в перменную среды навсегда:
-создаем скрипт экспорта
+чтобы экспортировать компилятор в перменную среды навсегда  
+создадим скрипт экспорта
 ```
 sudo sublime /usr/bin/export_variable_forever.sh
 ```
@@ -196,7 +196,7 @@ sudo sublime /etc/environment
 ```
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mbokastnev/x-tools/arm-cortex_a8-linux-gnueabihf/bin"
 ```
-!!!после этого перезгаружаем систему чтобы изменения вступили в силу. Скрипт может не перезагрузить.
+**!!!после этого перезгаружаем систему чтобы изменения вступили в силу. Скрипт может не перезагрузить.**
 
 
 ## Compilation example

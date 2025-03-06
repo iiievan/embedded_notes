@@ -25,9 +25,8 @@ sudo apt-get install gdb-arm-none-eabi
 ```
 
 5. VScode column selection mode
-```
-SHIFT + ALT + LEFT Mouse works for me
-```
+> in menu bar **Selection->Switch to Ctr+Click for Multi-Cursor**
+> **SHIFT + ALT + LEFT_Mouse** works for me
 
 6. install cmake latest version
 ```
@@ -46,9 +45,9 @@ sudo apt install kitware-archive-keyring
 sudo rm /etc/apt/trusted.gpg.d/kitware.gpg
 ```
 if sudo apt update gets the following error:
-> Err:7 https://apt.kitware.com/ubuntu bionic InRelease
-> The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6AF7F09730B3F0A4
-> Fetched 11.0 kB in 1s (7552 B/s)
+> Err:7 https://apt.kitware.com/ubuntu bionic InRelease  
+> The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6AF7F09730B3F0A4  
+> Fetched 11.0 kB in 1s (7552 B/s)  
 then:
 ```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6AF7F09730B3F0A4
