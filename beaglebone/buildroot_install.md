@@ -17,7 +17,6 @@ git clone git://git.buildroot.net/buildroot -b 2022.02
 cd buildroot
 $: sudo apt-get update
 $: sudo apt-get upgrade
-$: sudo apt install
 $: sudo apt install sed
 $: sudo apt install make
 $: sudo apt install binutils
@@ -39,8 +38,36 @@ $: sudo apt install bc
 $: sudo apt install findutils
 $: sudo apt install wget
 $: sudo apt install python3
-$: sudo apt install python-is-python3 l
-$: sudo apt install ibncurses-dev
+$: sudo apt install python-is-python3
+$: sudo apt install libncurses-dev
+```
+Если официальный недоступен то можно скопировать с  github
+```
+git clone https://github.com/buildroot/buildroot.git
+git tag
+```
+будет что-то типа:
+```
+...
+2021.08.1
+2021.08.2
+2021.08.3
+2021.11
+2021.11-rc1
+2021.11-rc2
+2021.11-rc3
+2021.11.1
+2021.11.2
+2021.11.3
+2022.02
+2022.02-rc1
+2022.02-rc2
+2022.02-rc3
+2022.02.1
+...
+```
+```
+git checkout 2021.08.1
 ```
 Проверить что в переменной PATH нет лишних пробелов и двоеточий:
 ```
@@ -158,7 +185,7 @@ iface eth0 inet dhcp
 ```
 После этого запустить компиляцию:
 ```
-$: make 2>&1  build.log
+$: make 2>&1
 ```
 3. настроить соединение по ethernet. соединить патчкордом beaglebone с ноутбуком:
 
