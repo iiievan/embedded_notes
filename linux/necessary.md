@@ -25,7 +25,7 @@ sudo apt-get install gdb-arm-none-eabi
 ```
 
 5. VScode column selection mode
-> in menu bar **Selection->Switch to Ctr+Click for Multi-Cursor**
+> in menu bar **Selection->Switch to Ctr+Click for Multi-Cursor**  
 > **SHIFT + ALT + LEFT_Mouse** works for me
 
 6. install cmake latest version
