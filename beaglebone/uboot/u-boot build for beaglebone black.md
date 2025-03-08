@@ -81,7 +81,8 @@ git tag
 переключаемся на нужную ветку:
 ```
 git checkout v2021.04
-make CROSS_COMPILE=${CC} am335x_boneblack_defconfig
+make distclean
+make CROSS_COMPILE=${CC} am335x_evm_defconfig
 nproc
 make CROSS_COMPILE=${CC} -j20
 ```

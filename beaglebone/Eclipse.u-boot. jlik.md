@@ -53,3 +53,20 @@ git checkout v2021.04
 Select **Makefile Project with Existing Code**: 
 ![aclipse_new_prj](./pictures/eclipse_new_prj.jpg)
 
+8. Go to project properties
+* in **C/C++ Build** tab *Behavior enable parallel build.  
+  clear field *Build(Incremental Build)*(clear 'all').  
+  in field *Clean* instead of "clean" write "distclean". 
+  ![ecl_build](./pictures/ecl_build.jpg)  
+* in **C/C++ Build->Environment** add variable 
+```
+CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf-
+```
+* make sure that in **C/C++ Build->Settings** in tab *Binary Parsers*
+ checked box GNU ELF Parser
+
+* Aplly all changes and exit preferences.
+  Go to **Project->Build Targets->Create** and create thwo targets:
+  ![clean](./pictures/eclipse_clean.jpg) and ![debug](./pictures/eclipse_debug.jpg)
+  Cl
+

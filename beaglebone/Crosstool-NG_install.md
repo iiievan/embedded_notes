@@ -104,6 +104,13 @@ build crosstool-ng:
 ./ct-ng build
 ```
 
+To rebuild ct-ng with another config:
+uset ${CC} variable if it setted:
+```
+unset CC
+./ct-ng build
+```
+
 > if this error appears:   
 > ``` 
 > [EXTRA]    Retrieving 'isl-0.20'  
