@@ -66,7 +66,10 @@ CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf-
  checked box GNU ELF Parser
 
 * Aplly all changes and exit preferences.
-  Go to **Project->Build Targets->Create** and create thwo targets:
+  Go to **Project->Build Targets->Create** and create two targets:
+  with *distclean* and *am335x_evm_defconfig* build targets
   ![clean](./pictures/eclipse_clean.jpg) and ![debug](./pictures/eclipse_debug.jpg)
-  Cl
+
+* Run first clean target, then debug, and next build project
+
 
