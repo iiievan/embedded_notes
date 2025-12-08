@@ -4,7 +4,7 @@
 
 2. распаковать и переместить в opt:
 ```
-tar -vxjf blender-4.2.15-linux-x64.tar.xz
+tar -xf blender-4.2.15-linux-x64.tar.xz
 ```
 ```
 sudo mv blender-4.2.15-linux-x64 /opt
