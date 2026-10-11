@@ -24,3 +24,16 @@ rm -f -- "$HOME/.config/SEGGER/Ozone.conf"
 rm -rf -- "$HOME/.local/share/data/SEGGER/Ozone"
 ```
 на этом все. Теперь можно ставить новую версию... 
+
+# Удаление jlink
+```bash
+sudo apt purge jlink
+```
+проверить остатки
+```bash
+command -v JLinkExe || echo "JLinkExe больше не найден"
+```
+```bash
+find /opt/SEGGER -mindepth 1 -maxdepth 1 -printf '%f -> %l\n' | sort
+```
+если что осталось удаляем так же  через **rm -rf**
